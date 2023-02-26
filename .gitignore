@@ -1,0 +1,10 @@
+.DS_Store
+.htaccess
+wp-config.php
+list.todo
+.idea
+wp-content/cache
+wp-content/advance-cache.php
+wp-content/wpo-cache
+wp-content/fonts
+wp-content/languages

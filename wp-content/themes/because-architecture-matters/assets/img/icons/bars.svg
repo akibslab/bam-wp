@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="12px" viewBox="0 0 15 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>||| 2</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MobileNav" transform="translate(-290.000000, -3.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="|||-2" transform="translate(290.060000, 3.120000)">
+                <g id="|||" transform="translate(7.440000, 5.640000) rotate(90.000000) translate(-7.440000, -5.640000) translate(1.800000, -1.800000)">
+                    <polygon id="Path" points="-8.8817842e-16 14.88 1.2 14.88 1.2 0 -8.8817842e-16 0"></polygon>
+                    <polygon id="Path" points="5.04 14.88 6.24 14.88 6.24 0 5.04 0"></polygon>
+                    <polygon id="Path" points="10.08 14.88 11.28 14.88 11.28 0 10.08 0"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
