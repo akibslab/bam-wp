@@ -1893,7 +1893,7 @@ textarea:focus {
 }
 .home-projects .project_items .project_item .project_title .title span {
 	font-family: var(--TThoves);
-	margin-right: 4px;
+	/* margin-right: 4px; */
 }
 
 .home-projects .project_items .project_item .project_title .title .delivery {
@@ -1931,4 +1931,89 @@ textarea:focus {
 .home-projects .project_content_heading .btn:hover {
 	color: var(--color-white);
 	background-color: transparent;
+}
+.home-organization .organization_content_heading .section_title {
+	max-width: 860px;
+	width: 100%;
+	margin-right: 60px;
+}
+.home-organization .organization_content_heading .section_title .title {
+	margin-bottom: 0px;
+}
+
+.home-organization .organization_content_heading {
+	display: flex;
+	align-items: end;
+}
+
+.home-organization .organization_content_heading .buttons {
+	display: flex;
+	flex-direction: column;
+}
+
+.home-organization .organization_content_heading .buttons a.btn {
+	padding: 0;
+	padding-bottom: 20px;
+	border: none;
+	border-bottom: 1px solid;
+	border-radius: 0;
+	width: 400px;
+	text-align: left;
+	font-size: 18px;
+	color: rgba(255, 255, 255, 0.5);
+	position: relative;
+}
+.home-organization
+	.organization_content_heading
+	.buttons
+	a.btn:not(:last-child) {
+	margin-bottom: 20px;
+}
+.home-organization .organization_content_heading .buttons a.btn:after {
+	content: "\f061";
+	font-family: "FontAwesome";
+	position: absolute;
+	right: 0;
+}
+.home-organization .organization_content_heading .buttons a.btn:hover {
+	color: var(--color-white);
+	background-color: transparent;
+}
+.home-organization .stages_organization {
+	margin-top: 55px;
+}
+.home-organization .stages_organization .organization_img {
+	margin-bottom: 25px;
+	height: 310px;
+}
+.home-organization .stages_organization .organization_img > img {
+	height: 100%;
+	object-fit: cover;
+}
+.home-organization .stages_organization .organization_content {
+	display: flex;
+	align-items: baseline;
+}
+.home-organization .stages_organization .organization_content .content_title {
+	max-width: calc(100% - 110px);
+}
+.home-organization .stages_organization .organization_content .title {
+	font-size: 20px;
+	line-height: 20px;
+	margin-bottom: 0px;
+}
+.home-organization .stages_organization .organization_content .title span {
+	font-family: var(--font-TThoves);
+}
+.home-organization .stages_organization .organization_content .content_status {
+	margin-left: auto;
+	font-weight: 400;
+	font-family: var(--font-TTcommons);
+	color: rgba(255, 255, 255, 0.3);
+	line-height: 13px;
+	width: 100px;
+	text-align: right;
+}
+.home-organization .stages_organization .stage_organization {
+	margin-bottom: 40px;
 }
