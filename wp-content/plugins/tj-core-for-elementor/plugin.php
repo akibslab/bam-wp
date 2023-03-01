@@ -161,6 +161,7 @@ class TJ_Core_Plugin {
 			'services',
 			'team',
 			'testimonial',
+			'marquee'
 		];
 	}
 

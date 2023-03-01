@@ -2017,3 +2017,14 @@ textarea:focus {
 .home-organization .stages_organization .stage_organization {
 	margin-bottom: 40px;
 }
+.marquee-title {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+.marquee-title h2 {
+	display: inline-block;
+	margin-bottom: 0px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
