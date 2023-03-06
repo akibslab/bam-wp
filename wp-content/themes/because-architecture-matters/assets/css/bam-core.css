@@ -1882,8 +1882,13 @@ textarea:focus {
 .home-projects .project_items .project_item:first-child .project_img {
 	height: 490px;
 }
+.home-projects .project_items .project_item:first-child .project_img img {
+	object-position: center;
+}
 .home-projects .project_items .project_item .project_img img {
 	height: 100%;
+	object-fit: cover;
+	object-position: bottom;
 }
 .home-projects .project_items .project_item .project_title .title {
 	font-size: 20px;
