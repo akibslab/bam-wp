@@ -625,7 +625,7 @@ class TJ_Projects extends Widget_Base {
 
                                                                                                       if (!empty($delivery_date)) :
                                                                                                       ?>
-                                <span class="delivery">Livraison <?php echo ($projects->current_post == '0') ? '' : '<br>' ?> <?php echo $delivery_date; ?></span>
+                                <span class="delivery">Livraison <?php echo $delivery_date; ?></span>
                               <?php endif; ?>
                             </<?php echo tag_escape($settings['project_title_tag']); ?>>
                           </div>

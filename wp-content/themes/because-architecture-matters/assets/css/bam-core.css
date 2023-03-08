@@ -1907,7 +1907,7 @@ textarea:focus {
 	font-family: var(--font-TTcommons);
 	color: rgba(255, 255, 255, 0.3);
 	text-align: center;
-	line-height: 13px;
+	/* line-height: 13px; */
 	float: right;
 }
 .home-projects .project_content_heading .btn {
