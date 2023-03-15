@@ -8,7 +8,7 @@
  * @package bam
  */
 $footer_cta_switcher = get_theme_mod('footer_cta_switcher', true);
-$footer_cta_title = get_theme_mod('footer_cta_title', bam_kses('Vous avez un projet ? <span>Discutons-en</span>'));
+$footer_cta_title = get_theme_mod('footer_cta_title', printf(__('%s', 'bam'), bam_kses('Vous avez un projet ? <span>Discutons-en</span>')));
 $footer_cta_btn_text = get_theme_mod('footer_cta_btn_text', bam_kses('Prendre un rdv téléphonique'));
 $footer_cta_btn_link = get_theme_mod('footer_cta_btn_link', __('#', 'bam'));
 
