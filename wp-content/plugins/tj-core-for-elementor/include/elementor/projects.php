@@ -594,7 +594,6 @@ class TJ_Projects extends Widget_Base {
           $this->add_render_attribute('tj-button-arg-2', 'class', 'btn');
         }
       }
-
 ?>
       <!-- start: Project Section -->
       <section class="project-section home-projects">
