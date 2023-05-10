@@ -261,6 +261,7 @@ class TJ_Projects extends Widget_Base {
         'label' => esc_html__('Content', 'tjcore'),
       ]
     );
+    $post_type = 'projects';
     $this->add_control(
       'show_item',
       [
@@ -271,6 +272,16 @@ class TJ_Projects extends Widget_Base {
         'step' => 1,
         'default' => 4,
         'separator' => 'before'
+      ]
+    );
+    $this->add_control(
+      'project_item_in',
+      [
+        'label' => esc_html__('Project Item', 'tjcore'),
+        'type' => Controls_Manager::SELECT2,
+        'options' => tj_get_all_types_post($post_type),
+        'multiple' => true,
+        'label_block' => true
       ]
     );
     $this->add_control(
@@ -541,10 +552,18 @@ class TJ_Projects extends Widget_Base {
   protected function render() {
     $settings = $this->get_settings_for_display();
 
+    $p_ids = array();
+    if (!empty($settings['project_item_in'])) {
+      foreach ($settings['project_item_in'] as $p_ids_in) {
+        $p_ids[] = $p_ids_in;
+      }
+    }
     $args = [
-      'posts_per_page' => $settings['show_item'],
       'post_type' => 'projects',
+      'post_status' => 'publish',
+      'posts_per_page' => $settings['show_item'],
       'order' => $settings['order'],
+      'post__in' =>  $p_ids,
     ];
 
     $projects = new \WP_Query($args);

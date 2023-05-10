@@ -11,6 +11,7 @@ get_header();
 $subtitle = function_exists('get_field') ? get_field('subtitle', get_the_ID()) : '';
 $address = function_exists('get_field') ? get_field('address', get_the_ID()) : '';
 $big_image = function_exists('get_field') ? get_field('big_image', get_the_ID()) : '';
+$video_link = function_exists('get_field') ? get_field('video_link', get_the_ID()) : '';
 
 // project
 $project_title = function_exists('get_field') ? get_field('project_title', get_the_ID()) : '';
@@ -61,7 +62,13 @@ $button_link = function_exists('get_field') ? get_field('button_link', get_the_I
       <div class="col">
         <div class="page_feature_content">
           <div class="page_feature_img">
-            <img src="<?php echo esc_url($big_image); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid($big_image), '_wp_attachment_image_alt', true); ?>">
+            <?php if (!empty($video_link)) : ?>
+              <video controls>
+                <source src="<?php echo $video_link; ?>" type="video/mp4">
+              </video>
+            <?php else : ?>
+              <img src="<?php echo esc_url($big_image); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid($big_image), '_wp_attachment_image_alt', true); ?>">
+            <?php endif; ?>
           </div>
         </div>
       </div>
